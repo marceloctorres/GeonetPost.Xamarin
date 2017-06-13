@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Esri.ArcGISRuntime.Xamarin.Forms;
+using System;
+using System.Reflection;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -49,7 +51,7 @@ namespace GeonetPost.Xamarin.UWP
 
         rootFrame.NavigationFailed += OnNavigationFailed;
 
-        XamarinForms.Forms.Init(e);
+        XamarinForms.Forms.Init(e, new Assembly[] { typeof(MapView).GetTypeInfo().Assembly });
 
         if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
         {
