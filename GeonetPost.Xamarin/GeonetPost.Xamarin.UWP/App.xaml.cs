@@ -1,11 +1,12 @@
-﻿using Esri.ArcGISRuntime.Xamarin.Forms;
-using System;
+﻿using System;
 using System.Reflection;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+
+using Esri.ArcGISRuntime.Xamarin.Forms;
 using XamarinForms = Xamarin.Forms;
 
 namespace GeonetPost.Xamarin.UWP

@@ -31,10 +31,22 @@
       <StackLayout Orientation="Vertical"
                    Margin="10"
                    HeightRequest="100">
-        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.XMin, Converter={StaticResource GeoCoorConverter}, ConverterParameter='X', StringFormat='XMin = {0}'}" />
-        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.YMin, Converter={StaticResource GeoCoorConverter}, ConverterParameter='Y', StringFormat='YMin = {0}'}" />
-        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.XMax, Converter={StaticResource GeoCoorConverter}, ConverterParameter='X', StringFormat='XMax = {0}'}" />
-        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.YMax, Converter={StaticResource GeoCoorConverter}, ConverterParameter='Y', StringFormat='YMax = {0}'}" />
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.XMin, 
+          Converter={StaticResource GeoCoorConverter}, 
+          ConverterParameter='X', 
+          StringFormat='XMin = {0}'}" />
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.YMin, 
+          Converter={StaticResource GeoCoorConverter}, 
+          ConverterParameter='Y', 
+          StringFormat='YMin = {0}'}" />
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.XMax, 
+          Converter={StaticResource GeoCoorConverter}, 
+          ConverterParameter='X', 
+          StringFormat='XMax = {0}'}" />
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.YMax, 
+          Converter={StaticResource GeoCoorConverter}, 
+          ConverterParameter='Y', 
+          StringFormat='YMax = {0}'}" />
       </StackLayout>
     </Grid>
     <StackLayout Grid.Row="1"
