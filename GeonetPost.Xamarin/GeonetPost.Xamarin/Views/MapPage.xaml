@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:bh="clr-namespace:GeonetPost.Xamarin.Behaviors"
+             xmlns:cv="clr-namespace:GeonetPost.Xamarin.Converters"
+             xmlns:esri="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="GeonetPost.Xamarin.Views.MapPage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <cv:GeographicCoordinateConverter x:Key="GeoCoorConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="auto" />
+    </Grid.RowDefinitions>
+    <esri:MapView Map="{Binding MyMap}"
+                  GraphicsOverlays="{Binding GraphicsOverlays}">
+      <esri:MapView.Behaviors>
+        <bh:SetMapViewViewportBehavior Viewpoint="{Binding Viewpoint}" />
+        <bh:MapViewViewpointChangedBehavior Command="{Binding UpdateViewpointCommand}" />
+      </esri:MapView.Behaviors>
+    </esri:MapView>
+    <Grid Margin="10"
+          HorizontalOptions="Start"
+          VerticalOptions="Start"
+          BackgroundColor="Beige">
+      <StackLayout Orientation="Vertical"
+                   Margin="10"
+                   HeightRequest="100">
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.XMin, Converter={StaticResource GeoCoorConverter}, ConverterParameter='X', StringFormat='XMin = {0}'}" />
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.YMin, Converter={StaticResource GeoCoorConverter}, ConverterParameter='Y', StringFormat='YMin = {0}'}" />
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.XMax, Converter={StaticResource GeoCoorConverter}, ConverterParameter='X', StringFormat='XMax = {0}'}" />
+        <Label Text="{Binding UpdatedViewpoint.TargetGeometry.YMax, Converter={StaticResource GeoCoorConverter}, ConverterParameter='Y', StringFormat='YMax = {0}'}" />
+      </StackLayout>
+    </Grid>
+    <StackLayout Grid.Row="1"
+                 Orientation="Horizontal">
+      <Button Margin="5"
+              Text="Click me!"
+              WidthRequest="150"
+              BackgroundColor="Black"
+              TextColor="White"
+              Command="{Binding ButtonClickCommand}" />
+      <Button Margin="5"
+              Text="Zoom to Point"
+              WidthRequest="150"
+              BackgroundColor="Black"
+              TextColor="White"
+              Command="{Binding ZoomCommand}" />
+    </StackLayout>
+  </Grid>
+</ContentPage>
