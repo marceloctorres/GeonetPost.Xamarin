@@ -1,4 +1,9 @@
-﻿using Xamarin.Forms;
+﻿using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.Azure.Mobile.Distribute;
+using Microsoft.Azure.Mobile.Push;
+using Xamarin.Forms;
 
 namespace GeonetPost.Xamarin
 {
@@ -12,6 +17,7 @@ namespace GeonetPost.Xamarin
 
     protected override void OnStart()
     {
+      MobileCenter.Start("uwp=5a0a9d44-80dc-433f-907a-dbd1ed0ad26d", typeof(Analytics), typeof(Crashes), typeof(Distribute), typeof(Push));
       // Handle when your app starts
     }
 
