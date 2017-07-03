@@ -58,7 +58,8 @@ namespace GeonetPost.Xamarin.Behaviors
           if (mapView != null)
           {
             var viewpoint = mapView.GetCurrentViewpoint(Esri.ArcGISRuntime.Mapping.ViewpointType.BoundingGeometry);
-            if (this.Command.CanExecute(viewpoint))
+            
+            if (this.Command.CanExecute(viewpoint) && viewpoint != null)
             {
               this.Command.Execute(viewpoint);
             }

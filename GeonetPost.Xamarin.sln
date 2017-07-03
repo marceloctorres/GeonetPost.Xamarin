@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GeonetPost.Xamarin", "GeonetPost.Xamarin\GeonetPost.Xamarin\GeonetPost.Xamarin.shproj", "{5FDB96B1-FCE9-47A7-A982-1680EF58A65B}"
 EndProject
@@ -43,6 +43,12 @@ Global
 		Release|iPhoneSimulator = Release|iPhoneSimulator
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
+		UWP Release|Any CPU = UWP Release|Any CPU
+		UWP Release|ARM = UWP Release|ARM
+		UWP Release|iPhone = UWP Release|iPhone
+		UWP Release|iPhoneSimulator = UWP Release|iPhoneSimulator
+		UWP Release|x64 = UWP Release|x64
+		UWP Release|x86 = UWP Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
@@ -117,6 +123,12 @@ Global
 		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.Release|x86.ActiveCfg = Release|Any CPU
 		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.Release|x86.Build.0 = Release|Any CPU
 		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.Release|x86.Deploy.0 = Release|Any CPU
+		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.UWP Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.UWP Release|ARM.ActiveCfg = Release|Any CPU
+		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.UWP Release|iPhone.ActiveCfg = Release|Any CPU
+		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.UWP Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.UWP Release|x64.ActiveCfg = Release|Any CPU
+		{F7555343-CA8C-41DA-8479-C2288C41DE0B}.UWP Release|x86.ActiveCfg = Release|Any CPU
 		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
 		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.Ad-Hoc|ARM.ActiveCfg = Ad-Hoc|iPhone
 		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
@@ -149,6 +161,12 @@ Global
 		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.Release|x64.ActiveCfg = Release|iPhone
 		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.Release|x86.ActiveCfg = Release|iPhone
+		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.UWP Release|Any CPU.ActiveCfg = Release|iPhone
+		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.UWP Release|ARM.ActiveCfg = Release|iPhone
+		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.UWP Release|iPhone.ActiveCfg = Release|iPhone
+		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.UWP Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.UWP Release|x64.ActiveCfg = Release|iPhone
+		{0C5A0FDD-7981-4645-AF05-4E34E024E25E}.UWP Release|x86.ActiveCfg = Release|iPhone
 		{33DF52CD-E39E-43E0-8539-7F65263E712B}.Ad-Hoc|Any CPU.ActiveCfg = Release|x86
 		{33DF52CD-E39E-43E0-8539-7F65263E712B}.Ad-Hoc|Any CPU.Build.0 = Release|x86
 		{33DF52CD-E39E-43E0-8539-7F65263E712B}.Ad-Hoc|Any CPU.Deploy.0 = Release|x86
@@ -211,6 +229,20 @@ Global
 		{33DF52CD-E39E-43E0-8539-7F65263E712B}.Release|x86.ActiveCfg = Release|x86
 		{33DF52CD-E39E-43E0-8539-7F65263E712B}.Release|x86.Build.0 = Release|x86
 		{33DF52CD-E39E-43E0-8539-7F65263E712B}.Release|x86.Deploy.0 = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|Any CPU.ActiveCfg = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|Any CPU.Build.0 = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|Any CPU.Deploy.0 = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|ARM.ActiveCfg = Release|ARM
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|ARM.Build.0 = Release|ARM
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|ARM.Deploy.0 = Release|ARM
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|iPhone.ActiveCfg = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|iPhoneSimulator.ActiveCfg = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|x64.ActiveCfg = Release|x64
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|x64.Build.0 = Release|x64
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|x64.Deploy.0 = Release|x64
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|x86.ActiveCfg = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|x86.Build.0 = Release|x86
+		{33DF52CD-E39E-43E0-8539-7F65263E712B}.UWP Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

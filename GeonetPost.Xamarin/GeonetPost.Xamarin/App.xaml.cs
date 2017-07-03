@@ -15,10 +15,12 @@ namespace GeonetPost.Xamarin
       MainPage = new GeonetPost.Xamarin.Views.MapPage();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected override void OnStart()
     {
       MobileCenter.Start("uwp=5a0a9d44-80dc-433f-907a-dbd1ed0ad26d", typeof(Analytics), typeof(Crashes), typeof(Distribute), typeof(Push));
-      // Handle when your app starts
     }
 
     protected override void OnSleep()
